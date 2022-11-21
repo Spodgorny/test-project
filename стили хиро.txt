@@ -1,0 +1,290 @@
+.hero {
+    margin: 0 auto;
+    position: relative;
+    padding: 180px 0 209px ;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/img-hero/hero-bg-desc1x.jpg);
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url(../images/img-hero/bg-vector.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        opacity: .2;
+        top: 55px;
+        bottom: 0;
+        left: -43px;
+    }
+
+    &_info {
+        text-align: center;
+    }
+
+    &-title {
+        font-family: 'Roboto';
+        font-weight: 500;
+        line-height: 1.18;
+        text-align: center;      
+        color: var(--text-color);
+        font-size: 32px;
+        max-width: 388px;
+        text-transform: inherit;
+        height: 114px;
+        margin-bottom: 25px;
+
+    }
+
+
+    .hero_btn {
+        background: var(--accent-color);
+        height: 51px;
+        color: var(--main-color);
+        text-transform: uppercase;
+        border: none;
+        border-radius: 16px;
+        width: 173px;
+        padding: 16px 20px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.18;
+        display: block;
+    }
+
+    // &_img-wrap {
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+
+    //     @media screen and (min-width: 1200px) {
+    //         background-image: url(../images/img-hero/hero-desc-decor1-1x.png);
+    
+    //         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //             background-image:  url(../images/img-hero/hero-desc-decor1-2x.png);
+    //         }
+    //     } 
+    //     @media screen and (min-width: 1200px) {
+    //         background-image: url(../images/img-hero/hero-desc-decor2-1x.png);
+    
+    //         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //             background-image:  url(../images/img-hero/hero-desc-decor2-2x.png);
+    //         }
+    //     } 
+    //     @media screen and (min-width: 1200px) {
+    //         background-image: url(../images/img-hero/hero-desc-decor3-1x.png);
+    
+    //         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //             background-image:  url(../images/img-hero/hero-desc-decor3-2x.png);
+    //         }
+    //     } 
+    // }
+
+
+}
+
+// @include tablet { 
+//     background-image: url(../images/img-hero/hero-desc-decor1-1x.png); 
+    // @media (min-device-pixel-ratio: 2), 
+    //   (min-resolution: 192dpi), 
+    //   (min-resolution: 2dppx) { 
+    //   background-image: url(../images/img-hero/hero-desc-decor1-2x.png); 
+    // } 
+// }
+
+
+@media screen and (min-width:1280px) {
+
+    .container {
+        width: 1200px;
+    }
+
+    .hero {
+        height: 804px;
+        padding: 180px 623px 209px 142px;
+
+        &_btn {
+            width: 306px;
+            height: 70px;
+            font-weight: 700;
+            font-size: 32px;
+            font-family: inherit;
+        }
+
+        &_wrap {
+            display: flex;
+        }
+
+        &-title {
+            font-family: 'Roboto';
+            width: 515px;
+            height: 225px;
+            font-size: 32px;
+            line-height: 1.17;          
+            color: var(--text-color);
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: left;
+            text-transform: inherit;
+        }
+
+        // &_btn {
+        //     display: block;
+        //     background: var(--accent-color);
+        //     border-radius: 16px;
+        //     height: 51px;
+        //     padding: 16px 20px;
+        //     font-weight: 700;
+        //     font-size: 16px;
+        //     line-height: 1.18;
+        //     color: var(--main-color);
+        //     border: none;
+        //     cursor: pointer;
+        //     text-transform: uppercase;
+
+        // }
+
+        &_img {
+            width: 50%;
+            position: relative;
+        }
+
+        &_info {
+            width: 50%;
+            z-index: 1;
+        }
+
+        // .hero-decor1 {
+        //     width: auto;
+        //     position: absolute;
+        //     left: 25%;
+        //     top: -140px;
+        // }
+
+    }
+
+
+    
+
+}
+
+.hero-decor1 {
+    width: auto;
+    position: absolute;
+    top: -140px;
+    left: 35%;
+}
+
+.hero-decor2 {
+    width: 270px;
+    position: absolute;
+    bottom: 8%;
+    right: -275px;
+}
+
+.hero-decor3 {
+    width: 88px;
+    position: absolute;
+    left: 45%;
+    bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-decor1 {
+        position: absolute;
+        top: -475px;
+        left: 49%;
+    }
+
+    .hero-decor2 {
+        width: 180px;
+        position: absolute;
+        right: -8%;
+        top: -365px;
+    }
+
+    .hero-decor3 {
+        width: 143px;
+        position: absolute;
+        left: 70%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .hero-decor1 {
+        position: absolute;
+        top: -475px;
+        left: 49%;
+    }
+
+    .hero-decor2 {
+        width: 180px;
+        position: absolute;
+        right: -8%;
+        top: -365px;
+    }
+
+    .hero-decor3 {
+        width: 143px;
+        position: absolute;
+        left: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        width: 768px;
+        padding-left: 40px;
+    }
+
+    .hero {
+        height: 860px;
+
+        &_img {
+            position: relative;
+        }
+        
+        &-title {
+            text-align: left;
+            font-weight: 600;
+            line-height: 1.17;
+            font-size: 56px;
+            margin-bottom: 94px;
+            height: 198px;
+        }
+
+        // &_btn {
+        //     width: 306px;
+        //     height: 70px;
+        // }
+
+    }
+
+
+}
+
+@media screen and (min-width: 320px) {
+    .hero {
+        height: 645px;
+
+        &_title {
+            text-align: center;
+            width: 247px;
+            height: 114px;
+        }
+
+        &_img {
+            position: relative;
+        }
+    }
+
+
+
+
+}
